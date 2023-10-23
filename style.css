@@ -1,0 +1,602 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;  
+ }
+
+.container-fluid{
+    background: linear-gradient(150deg, rgb(0, 1, 22) 0%, rgb(0, 1, 54) 100%);
+}
+
+.content{
+    display: flex;
+    margin-top: 10px;
+    width: 85%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+        /*::Logo::*/
+#main-logo{
+    display: block;
+    justify-content: space-between;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 300%;
+    transform: rotateZ(-3deg);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#main-logo-plus{
+    font-family: 'Bowlby One SC', cursive;
+    margin-left: 3%;
+    transform: rotateZ(10deg);
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+#main-logo:hover{
+    transform: rotateZ(-1.5deg);
+}
+/*::Logo footer::*/
+#main-logo-footer{
+    display: block;
+    justify-content: space-between;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 300%;
+    transform: rotateZ(-3deg);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#main-logo-plus-footer{
+    font-family: 'Bowlby One SC', cursive;
+    margin-left: 3%;
+    transform: rotateZ(10deg);
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+#main-logo-footer:hover{
+    transform: rotateZ(-1.5deg);
+}
+        /*::Opciones de cabecera::*/
+.main-options{
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-options a{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+
+.ss{
+    color: white;
+    opacity: 50%;
+    font-size: 110%;
+    transition: all .5s ease;
+}
+
+.ss:hover{
+    opacity: 100%;
+    font-size: 120%;
+    text-shadow: 0 0 30px;
+}
+
+
+
+        /*::Iconos de usuario::*/
+.icons{
+    color: white;
+    font-size: 200%;
+    display: flex;
+}
+
+.ri-notification-line{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.ri-search-line{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.ri-user-line{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+/*APARTADO DE CONTENIDO*/
+        /*::Posts::*/
+
+#main-trailers{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#posts{
+    display: flex;
+    background-color: rgb(0, 13, 73);
+    border-radius: 1vw;
+    width: 80%;
+    height: 100%;
+}
+
+.movies{
+    position: relative;
+    display: flex;
+    height: 2000px;
+    width: 100vw;
+    justify-content: flex-start;
+}
+
+        /*::Filtros::*/
+
+.filters{
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: end;
+    text-align: center;
+    
+}
+
+#fil-cont{
+    display: flex;
+    width: 270px;
+    height: 35%;
+    border-radius: 7px;
+    margin-top: 2%;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #fff;
+    justify-content: center;
+    background: linear-gradient(128deg,rgba(4,0,77,1)0%,rgba(9,9,126,1)41%,rgba(0,75,255,1)100%);
+    text-align: center;
+}
+
+#spn_filters{
+    display: flex;
+    margin-top: 10%;
+    padding: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    letter-spacing: 0.15em;
+    font-style: italic;
+}
+
+.spn_filt-value{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+.spn-fil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#li_text{
+    width: 140px;
+    height: 30px;
+}
+
+#chck-genero{
+    font-size: 90%;
+    line-height: 30px;
+    margin-bottom: 50px;
+    text-align: start;
+    margin-left: 20%;
+}
+
+.ri-building-3-fill{
+    margin-right: 8%;
+}
+
+.ri-bookmark-3-fill{
+    margin-right: 8%;
+}
+
+.ri-calendar-event-fill{
+    margin-right: 8%;
+}
+
+
+        /*::Peliculas::*/
+
+.movies-table{
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 100%;
+}
+
+#m-tb{
+    display: flex;
+    width: 60vw;
+    height: 70%;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.m-tb-inf{
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 30 black;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.m-tb-img{
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    height: 86%;
+    box-shadow: 0 0 30 black;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.m-tb-t{
+
+    height: 40px;
+    align-items: end;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 550;
+    font-size: 25px;
+    color: #fff;
+    cursor: default;
+}
+
+.m-tb-des{
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    cursor: default;
+}
+
+/*:::PELICULAS:::*/
+
+
+#list-movies{
+    text-align: center;
+    display: inline-block;
+    margin-top: 300px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Major Mono Display', monospace;
+    font-style: italic;
+    line-height: 30px;
+}
+
+#pp{
+    font-family: 'Major Mono Display', monospace;
+    display: flex;
+    color: #fff;
+    font-size: 60px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/*CINES*/
+#pc_cont{
+    display: flex;
+    height: 2000px;
+    width: 100vw;
+    justify-content: center;
+    
+}
+
+#pc_cc{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+#pc_title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#pc_title_main{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    word-spacing: 0.20em;
+}
+
+#pc_title_main_n{
+    margin-left: 10px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#pc_title_desc{
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+#pc_fotos{
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 3%;
+    
+}
+
+.pc_ph{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+    transform: rotateZ(0deg);
+    transition: 0.55s;
+}
+
+.pc_ph:hover{
+    transform: rotateZ(6deg);
+}
+
+
+/*APARTADO SOCIOS*/
+
+#pp_cont{
+    height: 2000px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#pp_cont_t{
+    display: flex;
+    width: 1000px;
+    height: 1200px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+#pp_cont_t_img{
+    display: flex;
+    width: 70%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+#pp_cont_t_text{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#pp_cont_t_sp{
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+    letter-spacing: 18px;
+    -webkit-text-stroke: 1.2px #fff;
+    color: transparent;
+    
+    text-shadow: 10px 10px #ffffff10;
+}
+
+#pp_cont_t_btn{
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border:3 #ffffff;
+    background: rgb(0, 1, 54);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#pp_cont_t_acl{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 15px;
+    color: #fff;
+
+}
+
+
+
+/*APARTADO DE FOOTER*/
+
+footer{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, rgb(0, 1, 22) 0%, rgb(0, 1, 54) 100%);
+}
+
+#f-cont{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    width: 100%;
+    height: auto;
+}
+
+#f-cont-values{
+    width: 90%;
+    height: auto;
+    width: 100%;
+    color: #ffffff6e;
+    text-align: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: italic;
+}
+
+.selecAct{
+    color: rgb(255, 217, 0);
+    opacity: 100%;
+    font-size: 120%;
+    text-shadow: 0 0 30px;
+}
+.pageact{
+    display: contents;
+}
+
+.pageinact{
+    display: none;
+}
+
+
+/* Cambiar color del navbar */
+.navbar-custom {
+    background-color: linear-gradient(150deg, rgb(0, 1, 22) 0%, rgb(0, 1, 54) 100%);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+.navbar-custom .nav-link:hover {
+    color: white;
+}
+.navbar-custom .navbar-toggler-icon{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Estilos para los cards */
+.card-transparent{
+    border: none;
+    background-color: transparent;
+}
+.card-semitransparent{
+    border: none;
+    background-color: transparent;
+}
+
+/* Estilo CSS personalizado para centrar los enlaces */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Quitar formato enlace */
+.tabs2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-dulceria{
+    background: linear-gradient(128deg,rgba(4,0,77,1)0%,rgba(9,9,126,1)41%,rgba(0,75,255,1)100%);
+    text-align: justify;
+}
+
+.boton-rosado{
+    width:100%; background-color: #DF295A;
+    border: none;
+}
+.boton-rosado:hover{
+    width:100%; background-color: #DF295A;
+    border: none;
+}
+.boton-rosado:active{
+    width:100%; background-color: #DF295A!important;
+    border: none!important;
+}
+
+/* Ventana Emergente Login */
+.modal-body {
+  background: linear-gradient(150deg, rgb(0, 1, 22) 0%, rgb(0, 1, 54) 100%);
+  color: white;
+}
+.modal-footer{
+    background: linear-gradient(150deg, rgb(0, 1, 22) 0%, rgb(0, 1, 54) 100%);
+    color: white;
+}
+
+.dropdown-menu{
+    font-size: 13px;
+}
+
+.dropdown-item2:hover{
+    background-color: rgb(0, 1, 54);
+    color: white;
+}
+
+.dropdown-menu p{
+    font-size: 10px;
+    color: gray;
+}

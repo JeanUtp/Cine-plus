@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Plus</title>
+    <link rel="icon" href="resources/img/photography.png" type="image/png">
+    <!-- Link ::: Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Link ::: css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link ::: googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;900&display=swap" rel="stylesheet">
+
+    <!-- Link ::: boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Link ::: remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Link ::: JS -->
+    <script src="app.js"></script>
+    <script src="carritoCompra.js"></script>
+     <script src="formulario.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+         <nav class="navbar navbar-expand-sm navbar-custom">
+            <div class="container">
+                <div>
+                    <span id="main-logo">CINE<span id="main-logo-plus">+</span></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid white;">
+                <span class="navbar-toggler-icon">↓</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav mx-auto">
+                    <a class="nav-item nav-link" href="#movies" onmouseenter="sonido.play()" class="ss" id="selecP">Películas</a>
+                    <a class="nav-item nav-link" href="#cines" onmouseenter="sonido.play()" class="ss" id="selecC">Cines</a>
+                    <a class="nav-item nav-link" href="#shop" onmouseenter="sonido.play()" class="ss" id="selecD">Dulceria</a>
+                    <a class="nav-item nav-link" href="#parners" onmouseenter="sonido.play()" class="ss" id="selecS">Socios</a>
+                    <a class="nav-item nav-link" href="#about-us" onmouseenter="sonido.play()" class="ss" id="selecN">Nosotros</a>
+                </div>
+                </div>
+                <div class="icons">
+                    <div class="dropdown">
+                        <div class="ri-notification-line" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dropdown-item2" href="#">Nuevas películas de terror</a>
+                            <p class="dropdown-item">15 minutos atras</p>
+                            <a class="dropdown-item dropdown-item2" href="#">Nuevas películas en estreno</a>
+                            <p class="dropdown-item">2 horas atras</p>
+                            <a class="dropdown-item dropdown-item2" href="#">Canchita recargable por hoy</a>
+                            <p class="dropdown-item">3 horas atras</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="ri-search-line" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <div class="container">
+                                <input type="text" id="buscador" class="form-control" />
+                                <br/>
+                                <button id="botonBuscar" type="button" class="btn btn-light">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="ri-user-line" data-toggle="modal" data-target="#modalLogin"></div>
+
+                </div>
+        </div>
+    </nav> 
+    <br/><br/>
+    <div id="page-main" >
+        <section id="main-trailers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="d-block w-100" src="resources/img/banners/banner4.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="resources/img/banners/banner2.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="resources/img/banners/banner3.png" alt="Third slide">
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+        <br/><br/><br/>
+        <div >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="m-tb-t">Próximamente</span>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/1.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Spider-man</span><div class="m-tb-des">15/12/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/2.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Prodigy</span><div class="m-tb-des">17/12/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/3.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">LaLaLand</span><div class="m-tb-des">30/11/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/4.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">X-Men</span><div class="m-tb-des">15/11/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/5.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Avatar</span><div class="m-tb-des">18/11/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/6.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Pesadilla</span><div class="m-tb-des">12/12/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/7.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Scream</span><div class="m-tb-des">16/11/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/8.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Libertad</span><div class="m-tb-des">27/11/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/9.jpg" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <span class="m-tb-t">Objetos</span><div class="m-tb-des">15/12/2023</div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-movies" class="pageinact">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div >
+                            <div id="fil-cont">
+                                <ul><span id="spn_filters">Filtros</span>
+                                    <hr size="1px" color="#fff">
+                                    <span class="spn_filt-value">
+                                        <div class="ri-building-3-fill"></div>Sedes
+                                    </span><br>
+                                    <li class="spn-fil">
+                                        <select name="Sedes" id="li_text">
+                                            <option value="cod_lsur">Lima Sur</option>
+                                            <option value="cod_lnorte">Lima Norte</option>
+                                            <option value="cod_lcentro">Lima Centro</option>
+                                            <option value="cod_Ate">Ate</option>
+                                            <option value="cod_Trujillo">Trujillo</option>
+                                            <option value="cod_Ica">Ica</option>
+                                            <option value="cod_Cusco">Cusco</option>
+                                        </select><br>
+                                    </li>
+                                    <span class="spn_filt-value">
+                                        <div class="ri-bookmark-3-fill"></div>Genero
+                                    </span><br>
+                                    <div id="chck-genero">
+                                        <input type="checkbox" value="1"> Terror<br>
+                                        <input type="checkbox" value="2"> Acción<br>
+                                        <input type="checkbox" value="3"> Drama<br>
+                                        <input type="checkbox" value="4"> Animado<br>
+                                        <input type="checkbox" value="5"> Comedia<br>
+                                    </div>
+
+                                    <span class="spn_filt-value">
+                                        <div class="ri-calendar-event-fill"></div>Día
+                                    </span><br>
+                                    <li class="spn-fil">
+                                        <select name="Fechas" id="li_text">
+                                            <option value="day1">Hoy</option>
+                                            <option value="day2">Mañana</option>
+                                            <option value="day3">[...]</option>
+                                            <option value="day4">[...]</option>
+                                        </select>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula1.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Venom</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(1)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">07:15 pm</button>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(2)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">10:15 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula3.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Uncharted</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(3)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">08:45 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula5.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Wakanda Forever</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(4)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">05:15 pm</button>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(5)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">07:45 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula4.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Minions</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(6)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">03:15 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula2.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Sonic</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(7)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">04:45 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="card card-transparent" >
+                                      <img class="card-img-top" src="resources/img/peliculas/pelicula6.png" alt="Card image cap" height="450px">
+                                      <div class="card-body">
+                                        <center>
+                                            <p class="m-tb-t">Babylon</p>
+                                            <button type="button" class="btn btn-light" onclick="verSalaPelicula(8)" 
+                                            data-toggle="modal" data-target=".bd-example-modal-lg">08:25 pm</button>
+                                        </center>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+
+    <div id="page-sites" class="pageinact">
+        <div >
+            <div id="pc_cc">
+                <br/><br/><br/>
+                <div id="pc_title">
+                    <h1 id="pc_title_main">CONOCE <span id="pc_title_main_n"> NUESTRAS </span>INSTALACIONES</h1><br>
+                    <p id="pc_title_desc">Encuentranos en las siguientes ubicaciones:</p>
+                </div>
+                <br/>
+                <br/><br/>
+                <div id="pc_fotos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine1.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Avenida Javier Prado →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine2.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Avenida Alfredo Mendiola →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine3.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Avenida Javier Prado →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                         </div>
+                         <br/><br/><br/><br/><br/>
+                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine4.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Av. Arequipa en Miraflores →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine5.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Av. Paseo de la República →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-transparent pc_ph" >
+                                      <img class="card-img-top" src="resources/img/cines/cine6.png" alt="Card image cap" height="300">
+                                      <div class="card-body">
+                                            <center><button type="button" class="btn btn-light"> Av. Arequipa en Lince →</button></center>
+                                      </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-shop" class="pageinact">
+        <div id="p_cont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="m-tb-t">Confitería Regular</span>
+                    </div>
+                </div>
+                <br/>
+                <div class="row" >
+                    <div class="col-md-10">
+                        <nav>
+                          <div class="nav nav-tabs tabs2" id="nav-tab" role="tablist" >
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Combos</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Canchita / Snacks</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bebidas</a>
+                          </div>
+                        </nav>
+                        <br/>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo1.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Combo 1 Dulce</strong></p>
+                                                <p class="m-tb-des">Canchita grande dulce + 2 gaseosas grandes</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 37.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(37,1)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto1">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(37,1)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo2.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Combo 1 Salado</strong></p>
+                                                <p class="m-tb-des">Canchita grande salada + 2 gaseosas grandes</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 35.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(35,2)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto2">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(35,2)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo3.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Combo 1 Mix</strong></p>
+                                                <p class="m-tb-des">Canchita grande salada y Dulce + 2 gaseosas grandes</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 38.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(38,3)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto3">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(38,3)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo4.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Mega Combo 2</strong></p>
+                                                <p class="m-tb-des">2 Canchitas grandes saladas + 2 gaseosas </p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 50.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(50,4)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto4">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(50,4)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo5.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Combo 1</strong></p>
+                                                <p class="m-tb-des">Canchita mediana salada + 2 gaseosas grandes</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 26.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(26,5)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto5">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(26,5)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/combo6.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Combo 2</strong></p>
+                                                <p class="m-tb-des">Canchita pequeña dulce + 1 gaseosa grande</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 16.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(16,6)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto6">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(16,6)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/cancha1.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Cancha Salada</strong></p>
+                                                <p class="m-tb-des">Canchita grande salada</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 27.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(27,7)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto7">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(27,7)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/cancha2.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Cancha Dulce</strong></p>
+                                                <p class="m-tb-des">Canchita grande dulce</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 28.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(28,8)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto8">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(28,8)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/cancha3.png" alt="Card image cap" height="150px" width="50%">
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Canchita Personal</strong></p>
+                                                <p class="m-tb-des">Canchita mediana personal</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 10.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(10,9)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto9">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(10,9)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/hd.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Hot Dog</strong></p>
+                                                <p class="m-tb-des">Hot Dog grande</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 9.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(9,10)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto10">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(9,10)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/nachos.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Nachos</strong></p>
+                                                <p class="m-tb-des">Nachos + crema de queso</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 7.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(7,11)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto11">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(7,11)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/bebida1.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Gaseosa</strong></p>
+                                                <p class="m-tb-des">Gaseosa grande</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 10.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(10,12)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto12">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(10,12)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-dulceria" style="width: 15rem;">
+                                          <img class="card-img-top" src="resources/img/dulceria/bebida2.png" alt="Card image cap" height="150px" >
+                                          <div class="card-body">
+                                                <p class="m-tb-des"><strong>Agua</strong></p>
+                                                <p class="m-tb-des">Agua San Luis 650 ml.</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <center>
+                                                <p class="m-tb-des"><strong>S/ 5.00</strong></p>
+                                               <button type="button" class="btn btn-light" onclick="quitarProducto(5,13)"><strong>-</strong></button>
+                                               <strong><span class="m-tb-des" id="producto13">0</span></strong>
+                                               <button type="button" class="btn btn-light"
+                                               onclick="agregarProducto(5,13)"><strong>+</strong></button>
+                                            </center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <br/>
+                        <p class="m-tb-t" id="total-pago" style="font-size: 20px;">Total S/ 0</p>
+                        <button type="button" class="btn btn-light" style="width:100%;">Pagar</button>
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+    </div>
+<div id="page-us" class="pageinact">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="m-tb-t">Nosotros - Cine Plus</span>
+
+                        <p style="text-align: justify;" class="m-tb-des">Somos una empresa líder en la industria del entretenimiento, con una rica historia y una pasión inquebrantable por el cine. Desde nuestra fundación en 1990, hemos estado comprometidos en brindar la mejor experiencia cinematográfica a nuestros clientes.</p>
+
+                        <p style="text-align: justify;" class="m-tb-des">Nuestra misión es simple: Queremos ser el destino favorito de todos los amantes del cine. Para lograrlo, nos esforzamos constantemente en ofrecer una amplia variedad de películas que abarcan géneros y épocas, desde clásicos atemporales hasta los últimos éxitos de taquilla.</p>
+
+                        <p style="text-align: justify;" class="m-tb-des">En Cine Plus, creemos que la magia del cine se encuentra en la experiencia compartida. Nuestras salas están diseñadas pensando en tu comodidad, con asientos espaciosos y una calidad de sonido e imagen excepcional. Cada visita a Cine Plus es una oportunidad para sumergirse en historias cautivadoras y crear recuerdos inolvidables.</p>
+
+                        <p style="text-align: justify;" class="m-tb-des">No somos solo un lugar para ver películas; somos un destino donde la emoción se encuentra con la pantalla grande. Además de nuestras proyecciones regulares, también organizamos eventos especiales, proyecciones de películas clásicas y funciones temáticas para ofrecer una experiencia única a nuestros clientes.</p>
+
+                        <p style="text-align: justify;" class="m-tb-des">Nuestro compromiso con la calidad y la excelencia nos ha convertido en un punto de referencia en la industria cinematográfica. Trabajamos en estrecha colaboración con los estudios de cine y los cineastas para asegurarnos de que siempre tengas acceso a lo mejor del séptimo arte.</p>
+
+                        <p style="text-align: justify;" class="m-tb-des">Te invitamos a unirte a nosotros en la aventura del cine y a ser parte de la comunidad de amantes del cine que ha hecho de Cine Plus su segundo hogar. Gracias por elegirnos como tu destino para el entretenimiento cinematográfico.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="m-tb-t">Encuéntranos en el Mapa</span>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3902.551338522201!2d-77.05861900000001!3d-12.005516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDAwJzE5LjkiUyA3N8KwMDMnMzEuMCJX!5e0!3m2!1ses-419!2spe!4v1696753039820!5m2!1ses-419!2spe" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <!--<div class="row">
+                    <div class="col-md-12">
+                        <span class="m-tb-t">Formatos Especiales</span>
+    
+                        <p style="text-align: justify;" class="m-tb-des"><strong>XD (Extreme Digital Cinema):</strong> Disfruta de nuestras pantallas gigantes acústicamente transparentes, proyección de 35 trillones de colores, imágenes 4K y un impresionante sonido de 90,000 Watts de potencia.</p>
+                        <p style="text-align: justify;" class="m-tb-des"><strong>REALD 3D:</strong> Sumérgete en la película con nuestra tecnología 3D que agrega profundidad a la pantalla, colocándote en medio de la acción.</p>
+                        <p style="text-align: justify;" class="m-tb-des"><strong>D-BOX:</strong> Experimenta la acción de una manera única con nuestras butacas especiales que se mueven sincronizadas con la película para que te sientas dentro de la historia.</p>
+                    </div>
+                </div>-->
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="m-tb-t">Contáctanos</span>
+                        <div class="form-group">
+                            <label for="nombreContacto" class="m-tb-des">Tu nombre</label>
+                            <input type="text" class="form-control" id="nombreContacto" name="nombreContacto"
+                            placeholder="Nombre...">
+                        </div>
+                        <div class="form-group">
+                            <label for="correoContacto" class="m-tb-des">Tu correo</label>
+                            <input type="text" class="form-control" id="correoContacto" name="correoContacto"
+                            placeholder="Correo...">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensajeContacto" class="m-tb-des">Tu mensaje</label>
+                            <textarea class="form-control" id="mensajeContacto" name="mensajeContacto"
+                            rows="5"  placeholder="Mensaje..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary boton-rosado"
+                                onclick="validarContactanos()">Enviar Mensaje</button>
+                        <p></p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="m-tb-t">Información de contacto</span>
+                        <br/><br/>
+                            <p style="text-align: justify;" class="m-tb-des">Envianos una llamada o correo electrónico a través de los siguientes enlaces desde cualquier dispositivo:</p>
+                            <div class="icons tabs2">
+                                <i class='bx bxs-phone-call'>
+                                    <a href="tel:+511234567" class="m-tb-des"
+                                    style="cursor: pointer;">(01) 123 4567</a></i>
+                            </div>
+                            <br/><br/>
+                            <div class="icons tabs2">
+                                <i class='bx bxs-envelope'>
+                                    <a href="mailto:soportecinep@cineplus.com" class="m-tb-des"
+                                    style="cursor: pointer;">soportecinep@cineplus.com</a></i>
+                            </div>
+                            <br/><br/>
+                            <p style="text-align: justify;" class="m-tb-des">También, puedes optar por escribirnos y obtener más información por nuestras redes sociales:
+                            <div class="icons tabs2" style="justify-content: center;">
+                                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+            <div>    
+        </div>
+    
+        </div>
+    </div>
+    <div id="page-parners" class="pageinact">
+        <div id="pp_cont">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <center>
+                     <div id="pp_cont_t_text">Junta puntos por cada visita para obtener beneficios <span id="pp_cont_t_sp">EXCLUSIVOS</span>
+                        </div>
+                    </center>
+                </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                        <div class="col-md-6">
+                            <img  src="resources/img/socio.png" height="600" width="100%"
+                            class="rounded-top rounded-bottom" >
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="nombre" class="m-tb-des">Nombre:</label>
+                                      <input type="text" class="form-control" id="nombre" name="nombre">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="apellidos_maternos" class="m-tb-des">Apellidos Maternos:</label>
+                                      <input type="text" class="form-control" id="apellidos_maternos" name="apellidos_maternos">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="tipo_documento" class="m-tb-des">Tipo de Documento:</label>
+                                      <select class="form-control" id="tipo_documento" name="tipo_documento">
+                                        <option value="dni">DNI</option>
+                                        <option value="pasaporte">Pasaporte</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="password" class="m-tb-des">Contraseña:</label>
+                                      <input type="password" class="form-control" id="password" name="password">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="apellidos_paternos" class="m-tb-des">Apellidos Paternos:</label>
+                                      <input type="text" class="form-control" id="apellidos_paternos" name="apellidos_paternos">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email" class="m-tb-des">Correo Electrónico:</label>
+                                      <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="nro_documento" class="m-tb-des">Número de Documento:</label>
+                                      <input type="text" class="form-control" id="nro_documento" name="nro_documento">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="confirm_password" class="m-tb-des">Confirmar Contraseña:</label>
+                                      <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                  <label class="m-tb-des">Género:</label>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero_masculino" value="masculino">
+                                    <label class="form-check-label m-tb-des" for="genero_masculino">Masculino</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero_femenino" value="femenino">
+                                    <label class="form-check-label m-tb-des" for="genero_femenino">Femenino</label>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos">
+                                    <label class="form-check-label m-tb-des" for="terminos">Acepto los términos y condiciones</label>
+                                  </div>
+                                </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary boton-rosado" 
+                                onclick="validarFormulario()">Unirse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+  <footer>
+        <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <center>
+                            <br/>
+                            <span id="main-logo-footer">CINE<span id="main-logo-plus-footer">+</span></span>
+                        </center>
+                    </div>
+                    <div class="col-md-6">
+                        <center>
+                            <br/>
+                            <span class="m-tb-t" style="font-size:20px;">Síguenos en redes sociales</span>
+                            <br/><br/>
+                        </center>
+                         
+                         <div class="icons tabs2" style="justify-content: center;">
+                                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row footer2">
+                    <div id="f-cont-values">
+                        © 2023. Proyecto del curso TALLER DE PROGRAMACIÓN WEB - Grupo 3
+                    </div>
+                </div>
+                <br/>
+            </div>
+    </footer>
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--<div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>-->
+          <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="m-tb-t">Iniciar sesión</span>
+                        <br/><br/>
+                        <div class="form-group">
+                            <label for="correoLogin" class="m-tb-des">Correo</label>
+                            <input type="email" class="form-control" id="correoLogin" name="correoLogin">
+                        </div>
+                        <div class="form-group">
+                            <label for="claveLogin" class="m-tb-des">Contraseña</label>
+                            <input type="password" class="form-control" id="claveLogin" name="claveLogin">
+                        </div>
+                        <br/>
+                        <button type="submit" class="btn btn-primary boton-rosado"  style="width:100%; font-size: 14px;"
+                                            onclick="validarLogin()">Ingresar</button>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!--<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sala de cine -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloModalSala">Sala</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cerrarSalaCine">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container"  style="text-align: center;" id="contenido-sala">
+            </div>
+            </div>
+          <div class="modal-footer">
+            <div class="container">
+                <div class="row">
+                    <button type="button" class="btn btn-light" onclick="confirmarAsientos()">Confirmar asientos</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="resumen-pago-asiento">                 
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+    <script src="script.js"></script>
+    <!-- JS ::: Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
